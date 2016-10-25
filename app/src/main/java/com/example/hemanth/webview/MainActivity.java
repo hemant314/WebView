@@ -42,7 +42,6 @@ public class MainActivity extends Activity {
 
         private Activity activity = null;
 
-
         public WebViewClientImpl(Activity activity) {
             this.activity = activity;
         }
@@ -57,6 +56,7 @@ public class MainActivity extends Activity {
                 progressDialog.show();
             }
         }
+
         public void onPageFinished(WebView view, String url) {
             try{
                 if (progressDialog.isShowing()) {
